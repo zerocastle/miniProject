@@ -26,7 +26,7 @@ public class BoardDBBean {
     private Connection getConnection() throws Exception {
       Context initCtx = new InitialContext();
       Context envCtx = (Context) initCtx.lookup("java:comp/env");
-      DataSource ds = (DataSource)envCtx.lookup("jdbc/jsptest");
+      DataSource ds = (DataSource)envCtx.lookup("jdbc/myoracle");
       return ds.getConnection();
     }
     
